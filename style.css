@@ -39,3 +39,49 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* General styling */
+
+body {
+  font-family: var(--ff-body);
+  text-align: center;
+}
+
+header {
+  background-color: var(--bg-clr);
+}
+
+.try-it,
+.get-started {
+  font-weight: var(--fw-openSans-bold);
+}
+
+h1,
+h2,
+.intro-description,
+.try-it {
+  color: var(--header-clr);
+}
+
+h1,
+h2 {
+  font-family: var(--ff-headings);
+}
+
+.get-started {
+  background-color: var(--get-started-btn);
+  color: white;
+}
+
+p:not(.intro-description) {
+  color: var(--par-clr);
+}
+
+footer,
+footer .copyright {
+  background-color: var(--header-clr);
+  color: white;
+}
+
+/* Make image black with brightness 0 and then invert the color to get it white */
+.footer-huddle-logo img {
+  filter: brightness(0) invert(1);
+}
