@@ -473,8 +473,13 @@ a:hover::before {
     grid-template-areas: 
     "logo logo logo"
     "info links social"
-    ". . copyright";
-    grid-template-columns: 1fr 1fr 1fr;
+    "none none copyright";
+    row-gap: 2em;
+    column-gap: 7.75em;
+  }
+
+  footer li {
+    font-size: 0.9em;
   }
 
   .footer-huddle-logo {
@@ -490,11 +495,22 @@ a:hover::before {
   .links {
     display: flex;
     height: fit-content;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 7em;
   }
 
   .social {
     height: fit-content;
+    justify-content: left;
+  }
+
+  .lorem {
+    padding: 0;
+  }
+
+  .copyright {
+    grid-area: copyright;
+    margin-right: auto;
   }
 
 }
