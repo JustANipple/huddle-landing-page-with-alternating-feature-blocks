@@ -78,6 +78,7 @@ h2 {
 .get-started {
   background-color: var(--get-started-btn);
   color: white;
+  box-shadow: 0px 5px 15px -10px black;
 }
 
 p:not(.intro-description) {
@@ -217,10 +218,14 @@ section {
 
 /* Fourth section */
 .ready {
+  background-color: white;
   display: grid;
   place-items: center;
   gap: 1.5rem;
   padding: 2.5rem 0;
+  position: relative;
+  top: 4rem;
+  
 }
 
 .ready-title {
@@ -230,4 +235,87 @@ section {
 .ready .get-started {
   font-size: 0.625rem;
   padding: 0.75rem 3rem;
+}
+
+/* Footer */
+footer {
+  padding: 9rem 1rem 3rem 1rem;
+  text-align: left;
+  display: grid;
+  gap: 3rem;
+}
+
+.footer-head {
+  display: grid;
+  gap: 2rem;
+}
+
+.footer-huddle-logo {
+  width: 10rem;
+}
+
+.info ul {
+  display: grid;
+  gap: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.info li:nth-child(1) {
+  list-style-image: url(images/icon-location.svg);
+}
+
+.info li:nth-child(2) {
+  list-style-image: url(images/icon-phone.svg);
+}
+
+.info li:nth-child(3) {
+  list-style-image: url(images/icon-email.svg);
+}
+
+.links {
+  display: grid;
+  gap: 1rem;
+}
+
+.links ul {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.social div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 2rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.copyright {
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+/* Active states */
+.try-it:hover,
+.get-started:hover {
+  opacity: 70%;
+  transition: opacity 0.5s ease;
+}
+
+.social div:hover {
+  color: var(--get-started-btn);
+  border-color: var(--get-started-btn);
+  transition: border-color 0.5s ease, color 0.5s ease;
 }
