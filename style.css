@@ -272,6 +272,10 @@ footer {
   list-style-image: url(images/icon-email.svg);
 }
 
+.lorem {
+  padding-right: 1.5rem;
+}
+
 .links {
   display: grid;
   gap: 1rem;
@@ -347,4 +351,86 @@ https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
 
 a:hover::before {
   transform: scaleX(1);
+}
+
+/* Desktop style */
+@media screen and (min-width: 768px) {
+
+  body {
+    font-size: 1.125em;
+  }
+
+  header {
+    padding: 3em 5rem;
+    background-image: url(images/bg-hero-desktop.svg);
+    gap: 2em;
+  }
+
+  .head-huddle-logo {
+    max-width: 11em;
+  }
+
+  .try-it {
+    font-size: 0.833em;
+    padding: 0.9em 4em;
+  }
+
+  main {
+    padding: 11em 7em 0 7em;
+  }
+
+  main p {
+    font-size: 1.25em;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .intro {
+    margin: auto 0;
+    text-align: left;
+    place-items: initial;
+    flex: 1;
+  }
+
+  .intro-title {
+    font-size: 2.25em;
+  }
+
+  .get-started {
+    font-size: 0.75em;
+    padding: 1.25em 5em;
+  }
+
+  .illustration {
+    flex: 1.25;
+  }
+
+  section {
+    text-align: left;
+  }
+
+  .grow-together,
+  .users {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .grow-together-content,
+  .flowing-content,
+  .users-content {
+    margin: auto 10em;
+  }
+
+  .grow-together-img {
+    margin: 3em 1em;
+  }
+
 }
