@@ -245,11 +245,6 @@ footer {
   gap: 3rem;
 }
 
-.footer-head {
-  display: grid;
-  gap: 2rem;
-}
-
 .footer-huddle-logo {
   width: 10rem;
 }
@@ -470,6 +465,36 @@ a:hover::before {
   .ready .get-started {
     font-size: 1.35em;
     padding: 1.25em 5em;
+  }
+
+  /* Footer */
+  footer {
+    padding: 11em 7em 3em 7em;
+    grid-template-areas: 
+    "logo logo logo"
+    "info links social"
+    ". . copyright";
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .footer-huddle-logo {
+    width: 20em;
+    grid-area: logo;
+  }
+
+  .info {
+    grid-area: info;
+    margin-bottom: auto;
+  }
+
+  .links {
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+  }
+
+  .social {
+    height: fit-content;
   }
 
 }
