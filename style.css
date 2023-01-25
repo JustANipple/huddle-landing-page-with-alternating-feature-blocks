@@ -152,7 +152,7 @@ header {
 
 /* Main */
 main {
-  padding: 4rem 1.25rem;
+  padding: 4rem 1.25rem 0 1.25rem;
   display: grid;
   gap: 2.5rem;
   font-size: 0.9rem;
@@ -161,18 +161,73 @@ main {
 section {
   box-shadow: 0 0 15px -10px black;
   border-radius: 1rem;
-  padding: 3.5rem 2rem 2rem 2rem; 
   display: grid;
-  gap: 3.5rem;
 }
 
-.grow-together-img,
+/* First section */
+.grow-together {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.grow-together-img {
+  margin: 2rem;
+}
+
+.grow-together-content {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+/* Second section */
+.flowing {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
 .flowing-img {
-  padding: 0 1rem;
+  margin: 1.5rem;
 }
 
-.grow-together-content,
 .flowing-content {
   display: grid;
   gap: 1rem;
+  margin: 1rem;
+}
+
+/* Third section */
+.users {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.users-img {
+  margin: 2rem;
+}
+
+.users-content {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 1.5rem;
+}
+
+/* Fourth section */
+.ready {
+  display: grid;
+  place-items: center;
+  gap: 1.5rem;
+  padding: 2.5rem 0;
+}
+
+.ready-title {
+  font-size: 1.125rem;
+}
+
+.ready .get-started {
+  font-size: 0.625rem;
+  padding: 0.75rem 3rem;
 }
