@@ -318,4 +318,5 @@ footer {
   color: var(--get-started-btn);
   border-color: var(--get-started-btn);
   transition: border-color 0.5s ease, color 0.5s ease;
+  cursor: pointer;
 }
