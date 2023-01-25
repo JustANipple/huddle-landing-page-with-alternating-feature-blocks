@@ -222,7 +222,7 @@ section {
   display: grid;
   place-items: center;
   gap: 1.5rem;
-  padding: 2.5rem 0;
+  padding: 2.5rem 0rem;
   position: relative;
   top: 4rem;
   
@@ -361,9 +361,9 @@ a:hover::before {
   }
 
   header {
-    padding: 3em 5rem;
+    padding: 2.75em 5rem;
     background-image: url(images/bg-hero-desktop.svg);
-    gap: 2em;
+    gap: 2.5em;
   }
 
   .head-huddle-logo {
@@ -377,6 +377,7 @@ a:hover::before {
 
   main {
     padding: 11em 7em 0 7em;
+    place-items: center;
   }
 
   main p {
@@ -394,6 +395,7 @@ a:hover::before {
     text-align: left;
     place-items: initial;
     flex: 1;
+    gap: 1.5em;
   }
 
   .intro-title {
@@ -419,18 +421,55 @@ a:hover::before {
     flex-direction: row-reverse;
   }
 
+  .flowing {
+    display: flex;
+  }
+
   h2 {
     font-size: 2em;
   }
 
-  .grow-together-content,
-  .flowing-content,
-  .users-content {
-    margin: auto 10em;
+  /* First section */
+  .grow-together-content {
+    margin: auto 7.5em;
   }
 
   .grow-together-img {
+    margin: 3em 2.5em;
+  }
+
+  /* Second section */
+  .flowing-content {
+    margin: auto 1em;
+  }
+
+  .flowing-img {
+    margin: 3em 5em;
+  }
+
+  /* Third section */
+  .users-content {
+    margin: auto 8em;
+  }
+
+  .users-img {
     margin: 3em 1em;
+  }
+
+  /* Fourth section */
+  .ready {
+    padding: 4.5em 8.5em;
+    width: fit-content;
+    top: 7em;
+  }
+
+  .ready-title {
+    font-size: 2.25em;
+  }
+
+  .ready .get-started {
+    font-size: 1.35em;
+    padding: 1.25em 5em;
   }
 
 }
