@@ -516,6 +516,6 @@ a:hover::before {
 /* Large desktop style */
 @media screen and (min-width: 1441px) {
   .intro-title {
-    font-size: 3em;
+    font-size: 3.25em;
   }
 }
