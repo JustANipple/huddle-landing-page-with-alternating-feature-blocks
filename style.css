@@ -284,6 +284,11 @@ footer {
   gap: 1rem;
 }
 
+.links a {
+  text-decoration: none;
+  color: white;
+}
+
 .social {
   display: flex;
   justify-content: center;
@@ -319,4 +324,27 @@ footer {
   border-color: var(--get-started-btn);
   transition: border-color 0.5s ease, color 0.5s ease;
   cursor: pointer;
+}
+
+/* Animating a link underline
+https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
+.links a:hover {
+  position: relative;
+}
+
+.links a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+a:hover::before {
+  transform: scaleX(1);
 }
