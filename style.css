@@ -130,7 +130,7 @@ header {
 .content {
   padding: 0 1.25rem;
   display: grid;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .intro {
@@ -348,9 +348,8 @@ a:hover::before {
   transform: scaleX(1);
 }
 
-/* Desktop style */
-@media screen and (min-width: 768px) {
-
+/* Small desktop style */
+@media screen and (min-width: 1024px) {
   body {
     font-size: 1.125em;
   }
@@ -512,5 +511,11 @@ a:hover::before {
     grid-area: copyright;
     margin-right: auto;
   }
+}
 
+/* Large desktop style */
+@media screen and (min-width: 1441px) {
+  .intro-title {
+    font-size: 3em;
+  }
 }
