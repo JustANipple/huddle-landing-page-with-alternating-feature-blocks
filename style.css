@@ -325,6 +325,10 @@ footer {
   cursor: pointer;
 }
 
+i {
+  transform: none;
+}
+
 /* Animating a link underline
 https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
 .links a:hover {
